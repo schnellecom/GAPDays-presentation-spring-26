@@ -10,7 +10,7 @@
 %\usepackage[ngerman]{babel}
 \let\openbox\undefined
 \usepackage{mathtools}
-\usepackage{enumitem}
+% \usepackage{enumitem}
 \let\openbox\undefined
 \usepackage{amsthm}
 \usepackage{thmtools}
@@ -99,12 +99,20 @@ style=numeric,
 \setbeamertemplate{navigation symbols}{}
 \setbeamertemplate{footline}{}
 
+% Change alert block colors
+
+% 1- Block title (background and text)
+\setbeamercolor{block title alerted}{fg=white, bg=orange}
+
+% 2- Block body (background)
+\setbeamercolor{block body alerted}{bg=orange!25}
+
 \makeatletter
 \beamer@theme@subsectionfalse%
 \makeatother
 
 
-\title{Visualising GAP objects: current status and the future}
+\title{Visualising GAP objects: \\current status and the future}
 \author{Lukas Schnelle}
 \date{GAPDays Summer 2026}
 
@@ -113,6 +121,56 @@ style=numeric,
 
 % remove dots on first slide
 \frame[plain]{\titlepage}
+
+\section{Packages}
+\begin{frame}
+    TODO: motivation
+\end{frame}
+
+\begin{frame}
+    Currently there are multiple packages, which provide functionality to visualise GAP objects. First we will give an (possibly incomplete) overview of them with some examples.
+\end{frame}
+
+\begin{frame}{XGAP(By Frank Celler and Max Neunh\"offer.)}
+    Provides a GUI in which e.g. subgroup lattices can be investigated. Needs to be started separately. \\
+    \includegraphics[width=\textwidth]{images/xgap-0.png}
+\end{frame}
+
+\begin{frame}
+    \centering
+    \includegraphics[width=0.7\textwidth]{images/xgap-1.png}
+\end{frame}
+
+\begin{frame}
+    \centering
+    \includegraphics[width=1\textwidth]{images/xgap-2.png}
+\end{frame}
+
+\begin{frame}
+    \centering
+    \includegraphics[width=0.9\textwidth]{images/xgap-3.png}
+\end{frame}
+
+\begin{frame}
+    \centering
+    \includegraphics[width=0.9\textwidth]{images/xgap-4.png}
+\end{frame}
+
+\begin{frame}
+    \begin{exampleblock}{Advantages}
+        \begin{itemize}
+            \item Direct GUI to use
+            \item Freely movable visualisation
+        \end{itemize}
+    \end{exampleblock}
+    \pause
+    \begin{alertblock}{Challenges}
+        \begin{itemize}
+            \item Needs to be started standalone
+            \item Needs to be adjusted to every OS
+        \end{itemize}
+    \end{alertblock}
+\end{frame}
 
 
 

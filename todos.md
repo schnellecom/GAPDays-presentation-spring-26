@@ -1,10 +1,10 @@
 # packages
 - [x] xgap
-- [ ] francy
-- [ ] jupyterviz, semigroupviz
-- [ ] sgpviz
-- [ ] automata
-- [ ] digraphs
+- [x] francy
+- [x] jupyterviz, semigroupviz
+- [x] sgpviz
+- [x] automata
+- [x] digraphs
 - [ ] yags
 - [ ] polymaking
 - [ ] simpcomp

@@ -122,7 +122,7 @@ style=numeric,
 % remove dots on first slide
 \frame[plain]{\titlepage}
 
-\section{Packages}
+\section{Current status}
 \begin{frame}
     TODO: motivation
 \end{frame}
@@ -336,7 +336,73 @@ style=numeric,
         \end{itemize}
     \end{alertblock}
     \centering
-    \includegraphics[width=0.9\textwidth]{images/digraphs-4.png}
+    \includegraphics[width=1\textwidth]{images/digraphs-4.png}
+\end{frame}
+
+\subsection{IntPic}
+\begin{frame}{IntPic (by Manuel Delgado)}
+    \begin{exampleblock}{Visualises arrays of integers}
+        Can be used to highlight different properties in large number of colours.
+    \end{exampleblock}
+    \medskip
+    \pause
+    \centering
+    \includegraphics[width=0.9\textwidth]{images/intpic-1.png}
+    
+\end{frame}
+
+\begin{frame}
+    \centering
+    \includegraphics[width=0.4\textwidth]{images/intpic-2.png}
+    \include{tikz/intpic.tex}
+\end{frame}
+
+\begin{frame}
+    \begin{exampleblock}{Advantages}
+        \begin{itemize}
+            \item Uses tikz
+            \item Highly customisable
+        \end{itemize}
+    \end{exampleblock}
+    \pause
+    \begin{alertblock}{Challenges}
+        \begin{itemize}
+            \item No immediate way to show results without compiling them
+        \end{itemize}
+    \end{alertblock}
+    \centering
+\end{frame}
+
+\subsection{GAPic}
+\begin{frame}{GAPic (by )}
+    
+\end{frame}
+
+\section{The future}
+\begin{frame}
+    \begin{exampleblock}{Goals}
+        Make visualisations in GAP...
+        \begin{itemize}
+            \item more visible
+            \item more intuitive $\xrightarrow{}$ accessible
+            \item sustainable
+        \end{itemize}
+    \end{exampleblock}
+    \pause
+    \begin{block}{Methods}
+        \begin{itemize}
+            \item Use of package extensions?
+            \item Use of existing standards
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+\begin{frame}{Questions and discussion}
+    \begin{itemize}
+        \item What are your experiences with visualisations in GAP?
+        \item What do you expect from a visualisation functionality?
+        \item Is there anything you want to visualise but are not able to visualise yet?
+    \end{itemize}
 \end{frame}
 
 \end{document}

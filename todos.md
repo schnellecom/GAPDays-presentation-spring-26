@@ -8,8 +8,8 @@
 - [ ] yags
 - [ ] polymaking
 - [ ] simpcomp
-- [ ] GAPic
-- [ ] intpic
+- [x] GAPic
+- [x] intpic
 
 # objects
 - (semi-)groups

@@ -123,15 +123,20 @@ style=numeric,
 \frame[plain]{\titlepage}
 
 \section{Current status}
-\begin{frame}
-    TODO: motivation
-\end{frame}
 
 \begin{frame}
-    Currently there are multiple packages, which provide functionality to visualise GAP objects. First we will give an (possibly incomplete) overview of them with some examples.
+    \begin{block}{Background}
+        Currently there are multiple packages, which provide functionality to visualise GAP objects.
+    \end{block}
+    \pause
+    \begin{exampleblock}{Motivation}
+        Last GAPDays (Summer 2025) James Mitchell and I noticed that we both work on packages which can visualise graphs in tikz with some duplicate functionality.
+    \end{exampleblock}
+    \pause
+    First we will give a (likely incomplete) overview of them with some examples.
 \end{frame}
 
-% \section{XGAP}
+\subsection{XGAP}
 \begin{frame}{XGAP (By Frank Celler and Max Neunh\"offer)}
     Provides a GUI in which e.g. subgroup lattices can be investigated. Needs to be started separately. \\
     \includegraphics[width=\textwidth]{images/xgap-0.png}
@@ -173,7 +178,7 @@ style=numeric,
     \end{alertblock}
 \end{frame}
 
-% \section{francy}
+\subsection{francy}
 \begin{frame}{francy (by Manuel Martins)}
     \begin{exampleblock}{Idea}
         Allow the XGAP system to run in a Jupyter Notebook.
@@ -207,14 +212,13 @@ style=numeric,
             \item Highly customisable
         \end{itemize}
     \end{exampleblock}
-    \pause
     \begin{alertblock}{Challenges}
         \begin{itemize}
             \item Needs additional installation of Jupyter
         \end{itemize}
     \end{alertblock}
     \pause
-    \begin{block}{Other packages}
+    \begin{block}{Related packages}
         \begin{itemize}
             \item jupyterviz
             \item semigroupviz
@@ -231,7 +235,7 @@ style=numeric,
         \end{itemize}
     \end{exampleblock}
     \centering
-    \includegraphics[width=0.9\textwidth]{images/sgpviz-1.png}
+    \includegraphics[width=1\textwidth]{images/sgpviz-1.png}
 \end{frame}
 
 \begin{frame}
@@ -246,7 +250,6 @@ style=numeric,
             \item Outputs PDFs
         \end{itemize}
     \end{exampleblock}
-    \pause
     \begin{alertblock}{Challenges}
         \begin{itemize}
             \item Needs additional installation of graphviz on system
@@ -256,11 +259,11 @@ style=numeric,
 
 \subsection{Automata}
 \begin{frame}{Automata (by Manuel Delgado, Steve Linton and José João Morais)}
-    \begin{exampleblock}{Automata visualisation}
-        \begin{itemize}
-            \item Using graphviz
-        \end{itemize}
-    \end{exampleblock}
+    % \begin{exampleblock}{Automata visualisation}
+    %     \begin{itemize}
+    %         \item Using graphviz
+    %     \end{itemize}
+    % \end{exampleblock}
     \medskip
     \pause
     \centering
@@ -303,7 +306,7 @@ style=numeric,
 \begin{frame}{graphviz (by James D. Mitchell and Matthew Pancer)}
     \begin{exampleblock}{Digraphs visualisation}
         \begin{itemize}
-            \item (soon) extension to the Digraphs package
+            \item (some work on) having Digraphs package as extension
             \item Also uses graphviz standard
         \end{itemize}
     \end{exampleblock}
@@ -315,7 +318,7 @@ style=numeric,
 
 \begin{frame}
     \centering
-    \includegraphics[width=0.6\textwidth]{images/digraphs-2.png}
+    \includegraphics[width=0.8\textwidth]{images/digraphs-2.png}
     \includegraphics[width=0.39\textwidth]{images/digraphs-3.png}
 \end{frame}
 
@@ -323,12 +326,11 @@ style=numeric,
     \begin{exampleblock}{Advantages}
         \begin{itemize}
             \item Uses graphviz standard
-            \item Is a package extension
+            \item Structure so it can can work with other packages
             \item Highly customisable
             \item Visualisations can be iterated
         \end{itemize}
     \end{exampleblock}
-    \pause
     \begin{alertblock}{Challenges}
         \begin{itemize}
             \item Needs GAP function for everything in graphviz standard
@@ -374,7 +376,7 @@ style=numeric,
 \end{frame}
 
 \subsection{GAPic}
-\begin{frame}{GAPic (by Alice C. Niemyer and many more)}
+\begin{frame}{GAPic (by Alice C. Niemeyer and many more)}
     \begin{block}{Visualising triangulated polyhedra}
         \begin{itemize}
             \item Came from the SimplicialSurfaces package
@@ -398,12 +400,13 @@ style=numeric,
         \begin{itemize}
             \item Results can be opened with any browser
             \item High interactivity
+            \item Results can be iterated
             \item Can use parameterised coordinates
         \end{itemize}
     \end{exampleblock}
-    \pause
     \begin{alertblock}{Challenges}
         \begin{itemize}
+            \item Every new feature needs own GAP function
             \item No immediate way to show results without generating them
         \end{itemize}
     \end{alertblock}
@@ -414,18 +417,18 @@ style=numeric,
     There are certainly more packages that include some visualisation which I did not mention.
 \end{frame}
 
-\section{The future}
+\section{the future}
 \begin{frame}
-    \begin{exampleblock}{Goals}
-        Make visualisations in GAP...
+    \begin{exampleblock}{(My) goals}
+        Make visualisations in GAP
         \begin{itemize}
-            \item more visible
             \item more intuitive $\xrightarrow{}$ accessible
             \item sustainable
+            \item more visible
         \end{itemize}
     \end{exampleblock}
     \pause
-    \begin{block}{Methods}
+    \begin{block}{Possible methods}
         \begin{itemize}
             \item Use of package extensions?
             \item Use of existing standards

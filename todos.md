@@ -1,6 +1,6 @@
 # packages
 - [x] xgap
-- [x] francy
+- [x] francy / francymonoid
 - [x] jupyterviz, semigroupviz
 - [x] sgpviz
 - [x] automata
@@ -10,6 +10,8 @@
 - [ ] simpcomp
 - [x] GAPic
 - [x] intpic
+- [ ] NumericalSgps
+- [ ] Posets
 
 # objects
 - (semi-)groups
